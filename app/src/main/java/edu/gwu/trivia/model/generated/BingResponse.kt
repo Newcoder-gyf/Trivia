@@ -32,5 +32,5 @@ data class BingResponse(
 	val nextOffset: Int? = null,
 
 	@Json(name="value")
-	val value: List<ValueItem?>? = null
+	val value: List<ValueItem>
 )

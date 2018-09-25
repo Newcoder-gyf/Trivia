@@ -35,13 +35,13 @@ data class ValueItem(
 	val contentUrl: String? = null,
 
 	@Json(name="contentSize")
-	val contentSize: String? = null,
+	val contentSize: String,
 
 	@Json(name="name")
 	val name: String? = null,
 
 	@Json(name="width")
-	val width: Int? = null,
+	val width: Int,
 
 	@Json(name="encodingFormat")
 	val encodingFormat: String? = null,
@@ -50,7 +50,7 @@ data class ValueItem(
 	val thumbnailUrl: String? = null,
 
 	@Json(name="height")
-	val height: Int? = null,
+	val height: Int,
 
 	@Json(name="creativeCommons")
 	val creativeCommons: String? = null
