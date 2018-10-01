@@ -44,7 +44,7 @@ class BingImageSearchManager(private val context: Context, private val imageView
         apiEndpoint.getBingResponse(query, "Strict", "en-us").enqueue(object: Callback<BingResponse> {
             override fun onFailure(call: Call<BingResponse>, t: Throwable) {
                 Log.d(TAG, "API call failed!")
-                //TODO: handle failure
+                imageSearchCompletionListener?.imageNotLoaded()
 
             }
 
@@ -58,17 +58,17 @@ class BingImageSearchManager(private val context: Context, private val imageView
 
                     Picasso.get().load(uri).into(imageView, object: com.squareup.picasso.Callback {
                         override fun onSuccess() {
-                            //TODO: handle success
+                            imageSearchCompletionListener?.imageLoaded()
                         }
 
                         override fun onError(e: java.lang.Exception?) {
-                            //TODO: handle error
+                            imageSearchCompletionListener?.imageNotLoaded()
                         }
                     })
 
                 }
                 else{
-                    //TODO: hanle response body null
+                    imageSearchCompletionListener?.imageNotLoaded()
                 }
 
             }

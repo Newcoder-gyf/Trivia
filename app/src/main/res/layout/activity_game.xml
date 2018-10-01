@@ -19,7 +19,8 @@
         android:layout_height="wrap_content"
         tools:text="Top Left"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentTop="true"
+        android:onClick="buttonPressed"/>
 
     <Button
         android:id = "@+id/top_rigth_button"
@@ -27,7 +28,8 @@
         android:layout_height="wrap_content"
         tools:text="Top Right"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentTop="true"
+        android:onClick="buttonPressed"/>
 
     <Button
         android:id = "@+id/bottom_left_button"
@@ -35,7 +37,8 @@
         android:layout_height="wrap_content"
         tools:text="Bottom Left"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:onClick="buttonPressed"/>
 
     <Button
         android:id = "@+id/bottom_right_button"
@@ -43,7 +46,8 @@
         android:layout_height="wrap_content"
         tools:text="Bottom Right"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:onClick="buttonPressed"/>
 
 
 

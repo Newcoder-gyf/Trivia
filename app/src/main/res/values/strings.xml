@@ -3,4 +3,7 @@
     <string name="high_score_placeholder">Your Score</string>
     <string name="play_button_text">Play</string>
     <string name="high_score_button">High Score</string>
+    <string name="correct">Your are right</string>
+    <string name="wrong">Your are wrong</string>
+
 </resources>
